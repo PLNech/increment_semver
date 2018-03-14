@@ -1,17 +1,16 @@
 #! /usr/bin/env ruby
+# Increment a version code following SemVer Scheme
+#
+# @param semver [String] the version code to update, e.g. "1.2.3"
+# @param increment_type [String] the version code to update, e.g. "1.2.3"
+# @return [String] the version code updated according to #increment_type
+#
+# @example Default increment (patch)
+#   increment_semver("1.2.3")  #=> "1.2.4"
+#
+# @example Increment for given type
+#   increment_semver("1.2.3", "major")  #=> "2.0.0"
 def increment_semver(semver, increment_type = "patch")
-  # Increment a version code following SemVer Scheme
-  #
-  # Example:
-  #   >> increment_semver("1.2.3")
-  #   => "1.2.4"
-  #
-  #   >> increment_semver("1.2.3", "major")
-  #   => "2.0.0"
-  #
-  # Arguments:
-  #   semver: (String)
-  #   increment_type: (String)
   if not (/\d+\.\d+\.\d+/).match(semver)
     raise "Your semantic version must match the format 'X.X.X'."
   end
