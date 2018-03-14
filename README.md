@@ -1,5 +1,11 @@
 # Increment SemVer
-> A gem to increment a version number following the [Semantic Versioning scheme](semver.org)
+> A gem to increment a version number following the [Semantic Versioning scheme](semver.org)  
+
+[
+![Gem Version](https://badge.fury.io/rb/increment_semver.svg) 
+![Gem Downloads](https://ruby-gem-downloads-badge.herokuapp.com/increment_semver?type=total)
+](https://rubygems.org/gems/increment_semver)
+
 
 ## Install
 
