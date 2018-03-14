@@ -37,9 +37,7 @@ done
 echo "Building new gem..."
 gem build $GEMSPEC
 
-echo "Pushing gem v$VERSION_CODE to RubyGems.org..."
-gem push increment_semver-*.gem
 echo "Pushing release commit to GitHub..."
 git push origin master
-echo "Release complete."
+gem push increment_semver-*.gem
 rm ./*.gem
