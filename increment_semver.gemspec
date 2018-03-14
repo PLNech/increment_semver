@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'increment_semver'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2018-03-14'
   s.summary     = "Increment SemVer"
   s.description = "A gem to increment a version number following the Semantic Versioning scheme"
