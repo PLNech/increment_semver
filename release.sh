@@ -26,7 +26,8 @@ fi
 echo "About to release $VERSION_CODE"
 echo "Bumping version number in gemspec..."
 sed -i '' "s/\\(.*s\\.version     = \\).*/\\1'$VERSION_CODE'/" $GEMSPEC
-git add $GEMSPEC
+sed -i '' "s/\\(.*~> \\).*$/\\1$VERSION_CODE'/" ./README.md
+git add $GEMSPEC ./README.md
 git commit -m "chore: Bump version to $VERSION_CODE"
 
 echo "Backing up existing gems in $(pwd)..."
