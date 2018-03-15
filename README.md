@@ -16,7 +16,7 @@ gem install increment_semver
 
 Alternatively, add the following to your GemFile:
 ```gemfile
-gem 'increment_semver', '~> 0.0.1' 
+gem 'increment_semver', '~> 0.0.4'
 ```
 
 ## Usage
